@@ -1,0 +1,13 @@
+// Delantero.java
+package com.champs2026.logica;
+
+public class Delantero extends com.champs2026.logica.Deportista {
+    public Delantero(String nombre, int velocidad, int disparo, int pase, int defensa, double precio) {
+        super(nombre, velocidad, disparo, pase, defensa, precio);
+    }
+
+    @Override
+    public void mostrarDetalles() {
+        System.out.println("[DELANTERO] " + getNombre() + " | VEL: " + getVelocidad() + " | SHO: " + getDisparo() + " | PRECIO: " + getPrecio());
+    }
+}
